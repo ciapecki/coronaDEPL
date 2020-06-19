@@ -111,14 +111,14 @@ async function chartIt() {
         data: {
             labels: xlabels, 
             datasets: [{
-                label: 'Active Cases',
+                label: 'Active DE',
                 backgroundColor: 'lightblue',
                 borderColor: 'lightblue',
                 data: yactcases,
                 fill:false
                         },
                     {
-                label: 'Deaths',
+                label: 'DeathsDE',
                 backgroundColor: 'darkblue',
                 borderColor: 'darkblue',
                 data: ydeaths,
