@@ -123,6 +123,7 @@ async function chartIt() {
                 borderColor: 'darkblue',
                 data: ydeaths,
                 fill:false
+                //type: 'bar'
                     },
                     {
                 label: 'Active PL',
@@ -137,6 +138,7 @@ async function chartIt() {
                 borderColor: 'darkred',
                 data: ydeathspl,
                 fill:false
+                //type: 'bar'
 
                     }
                 ]
