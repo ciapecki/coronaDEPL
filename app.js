@@ -145,6 +145,10 @@ async function chartIt() {
         },
 
         // Configuration options go here
-        options: {}
+        options: {
+            legend: {
+                position: 'bottom'
+            }
+        }
     });
 };
