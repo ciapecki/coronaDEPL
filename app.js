@@ -139,7 +139,6 @@ async function chartIt() {
                 data: ydeathspl,
                 fill:false
                 //type: 'bar'
-
                     }
                 ]
         },
@@ -148,7 +147,40 @@ async function chartIt() {
         options: {
             legend: {
                 position: 'bottom'
+            },
+
+            plugins: {
+                zoom: {
+                    // Container for pan options
+                    pan: {
+                        // Boolean to enable panning
+                        enabled: true,
+
+                        // Panning directions. Remove the appropriate direction to disable 
+                        // Eg. 'y' would only allow panning in the y direction
+                        mode: 'x',
+                        speed: 200,
+                        threshold: 100,
+                    },
+
+                    // Container for zoom options
+                    zoom: {
+                        // Boolean to enable zooming
+                        enabled: true,
+
+                        // Zooming directions. Remove the appropriate direction to disable 
+                        // Eg. 'y' would only allow zooming in the y direction
+                        mode: 'x',
+                        drag: true,
+                        speed: 20,
+                        threshold: 10,
+                        sensitivity:0.1 
+                    }
+                }
             }
         }
+
+
     });
 };
+
