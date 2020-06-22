@@ -171,7 +171,7 @@ async function chartIt() {
                         // Zooming directions. Remove the appropriate direction to disable 
                         // Eg. 'y' would only allow zooming in the y direction
                         mode: 'x',
-                        drag: true,
+                        //drag: true,
                         speed: 20,
                         threshold: 10,
                         sensitivity:0.1 
